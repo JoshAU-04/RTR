@@ -17,14 +17,15 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
           cache: npm
 
       - name: Install dependencies
         run: npm install
 
       - name: Run tests
-        run: npx jest --coverage --passWithNoTests
+        run: |
+          npx vitest run --reporter=junit --outputFile=test-report.junit.xml;
+          npx vitest run --coverage
 
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v5
@@ -32,3 +33,8 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           slug: JoshAU-04/RTR
 
+      - name: Upload test results to Codecov
+        if: ${{ !cancelled() }}
+        uses: codecov/test-results-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
