@@ -1,4 +1,4 @@
-# Game Wiki
+# RTR
 
 This is essentially just a repo where I am documenting all the stuff for an
 upcoming game that I am making. You'll find stuff that is not really going to

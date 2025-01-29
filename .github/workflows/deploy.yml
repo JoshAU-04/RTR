@@ -28,7 +28,7 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: '/RtR-Wiki'
+          BASE_PATH: '/RTR'
         run: |
           npm run build
           touch build/.nojekyll
