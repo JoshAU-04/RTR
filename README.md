@@ -9,9 +9,6 @@
   </a>
 </div>
 
-<hr>
-<br>
-
 
 ## About
 
