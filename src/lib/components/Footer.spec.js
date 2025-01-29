@@ -1,19 +1,29 @@
-import {describe, expect, it} from 'vitest';
-import Footer from "./Footer.svelte";
+import { describe, expect, test } from 'vitest'
+import { flushSync, mount, unmount } from 'svelte';
+import { render } from '@testing-library/svelte'
+import Footer from './Footer.svelte'
 
 describe("Footer", () => {
-    let instance = null;
+    let component = null;
 
     beforeEach(() => {
         //create instance of the component and mount it
+        component = mount(Footer, {
+            target: document.body
+        });
     })
 
     afterEach(() => {
-        //destory/unmount instance
+        unmount(component);
     })
 
     test("footer is defined", () => {
-        expect(instance).toBeDefined();
+        expect(component).toBeDefined();
+    })
+
+    test('renders footer date', async () => {
+        let text = `© ${new Date().getFullYear()} Game Project. All rights reserved.`
+        expect(document.body.innerHTML).toContain(text);
     })
 })
 

@@ -16,6 +16,7 @@ export default defineConfig({
   ],
   test: {
     globals: true,
+    environment: 'happy-dom',
     exclude: [
       ...configDefaults.exclude, 
     ],
@@ -33,4 +34,9 @@ export default defineConfig({
       ],
     }
   },
+  resolve: process.env.VITEST
+  ? {
+    conditions: ['browser']
+  }
+  : undefined
 });
