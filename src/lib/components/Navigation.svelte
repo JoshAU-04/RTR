@@ -1,9 +1,9 @@
 <script>
   export let links = [
-    { name: "Release Notes", href: "/wiki/releases" },
-    { name: "Wiki", href: "/wiki" },
-    { name: "Entities", href: "/wiki/entities" },
-    { name: "XP", href: "/wiki/experience" }
+    { name: "Release Notes", href: "/RTR/wiki/releases" },
+    { name: "Wiki", href: "/RTR/wiki" },
+    { name: "Entities", href: "/RTR/wiki/entities" },
+    { name: "XP", href: "/RTR/wiki/experience" }
   ];
 </script>
 
