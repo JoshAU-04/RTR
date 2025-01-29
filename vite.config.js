@@ -2,6 +2,7 @@ import { sveltekit } from "@sveltejs/kit/vite";
 import { svelte } from "@sveltejs/vite-plugin-svelte";
 import { defineConfig } from "vite";
 import { codecovSvelteKitPlugin } from "@codecov/sveltekit-plugin";
+import { configDefaults } from 'vitest/config'
 
 export default defineConfig({
   plugins: [
@@ -16,12 +17,19 @@ export default defineConfig({
   test: {
     globals: true,
     exclude: [
-      '**/node_modules/**',
-      '**/dist/**',
-      '**/cypress/**',
-      '**/.{idea,git,cache,output,temp}/**',
-      '**/{karma,rollup,webpack,vite,vitest,jest,ava,babel,nyc,cypress,tsup,build}.config.*',
-      'game_wiki/build',
+      ...configDefaults.exclude, 
     ],
+    coverage: {
+      exclude: [
+        ...configDefaults.exclude, 
+        '**/node_modules/**',
+        '**/dist/**',
+        '**/cypress/**',
+        '**/.{idea,git,cache,build,output,temp}/**',
+        './src/config/**',
+        '.svelte-kit/',
+        'svelte.config.js',
+      ],
+    }
   },
 });
