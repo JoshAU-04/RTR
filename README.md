@@ -4,7 +4,10 @@
     <img src="https://wakatime.com/badge/user/096fb73c-2b1b-48e7-975e-89bfd40f424d/project/9782c29b-2264-46b7-9049-ed1a93fe93f9.svg" alt="wakatime">
   </a>
   <a href="https://codecov.io/gh/JoshAU-04/RTR">
-    <img src="https://codecov.io/gh/JoshAU-04/RTR/graph/badge.svg?token=KR0C64G1TB"/>
+    <img src="https://codecov.io/gh/JoshAU-04/RTR/graph/badge.svg?token=KR0C64G1TB" alt="codecov" />
+  </a>
+  <a href="https://dl.circleci.com/status-badge/redirect/circleci/8ZUyuYJtwA1qACSKnnTsDn/QLRJs3A9GFTongpu6vaBLZ/tree/main">
+    <img src="https://dl.circleci.com/status-badge/img/circleci/8ZUyuYJtwA1qACSKnnTsDn/QLRJs3A9GFTongpu6vaBLZ/tree/main.svg?style=svg" alt="circleci" />
   </a>
 </div>
 
