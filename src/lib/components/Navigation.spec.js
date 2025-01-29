@@ -1,14 +1,14 @@
 import { describe, expect, test } from 'vitest'
 import { flushSync, mount, unmount } from 'svelte';
 import { render } from '@testing-library/svelte'
-import Ability from './Ability.svelte'
+import Navigation from './Navigation.svelte'
 
-describe("Ability", () => {
+describe("Navigation", () => {
     let component = null;
 
     beforeEach(() => {
         //create instance of the component and mount it
-        component = mount(Ability, {
+        component = mount(Navigation, {
             target: document.body
         });
     })
@@ -17,20 +17,13 @@ describe("Ability", () => {
         unmount(component);
     })
 
-    test("ability is defined", () => {
+    test("navigation is defined", () => {
         expect(component).toBeDefined();
     })
 
-    test('renders ability name', async () => {
-        return true
-    })
-
-    test('renders ability description', async () => {
-        return true
-    })
-
-    test('renders ability icon', async () => {
-        return true
+    test('renders footer date', async () => {
+        let text = ``
+        expect(document.body.innerHTML).toContain(text);
     })
 })
 
