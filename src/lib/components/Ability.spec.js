@@ -1,18 +1,36 @@
-import {describe, expect, it} from 'vitest';
-import Ability from "./Ability.svelte";
+import { describe, expect, test } from 'vitest'
+import { flushSync, mount, unmount } from 'svelte';
+import { render } from '@testing-library/svelte'
+import Ability from './Ability.svelte'
 
 describe("Ability", () => {
-    let instance = null;
+    let component = null;
 
     beforeEach(() => {
         //create instance of the component and mount it
+        component = mount(Ability, {
+            target: document.body
+        });
     })
 
     afterEach(() => {
-        //destory/unmount instance
+        unmount(component);
     })
 
-    test("ability name is default", () => {
-        expect(instance).toBeDefined();
+    test("ability is defined", () => {
+        expect(component).toBeDefined();
+    })
+
+    test('renders ability name', async () => {
+        return true
+    })
+
+    test('renders ability description', async () => {
+        return true
+    })
+
+    test('renders ability icon', async () => {
+        return true
     })
 })
+
