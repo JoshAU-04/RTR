@@ -1,7 +1,3 @@
-<script lang="ts">
-</script>
-
-<h1>Home page</h1>
-
-
-<div class="alert alert-primary">Still under construction!<br><b>Check back later :)</b></div>
+<div class="container">
+	<div class="alert alert-primary w-25 p-2 m-5"><b>Still under construction!</b><br>Check back later... <i class="bi bi-emoji-wink"></i></div>
+</div>
