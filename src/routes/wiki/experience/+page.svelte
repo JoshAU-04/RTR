@@ -49,17 +49,3 @@
 	</div>
 
 </div>
-
-<style>
-  .divider {
-		font-family: "Noto Sans Symbols", serif;
-		font-optical-sizing: auto;
-		font-weight: <weight>;
-		font-style: normal;
-    text-align: center;
-    font-size: 2.5rem;
-    margin: 2rem 0;
-    color: #555;
-  }
-</style>
-

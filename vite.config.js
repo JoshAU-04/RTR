@@ -29,6 +29,7 @@ export default defineConfig({
         './src/config/**',
         '.svelte-kit/',
         'svelte.config.js',
+        'build/'
       ],
     }
   },
