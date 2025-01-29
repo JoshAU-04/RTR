@@ -10,7 +10,8 @@
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"deploy": "npm run build && git subtree push --prefix=build origin gh-pages"
+		"deploy": "npm run build && git subtree push --prefix=build origin gh-pages",
+		"validate": "curl --data-binary @.github/codecov.yml https://codecov.io/validate"
 	},
 	"devDependencies": {
 		"@codecov/sveltekit-plugin": "^1.8.0",
