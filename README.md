@@ -1,6 +1,5 @@
 <div align="center">
   <h1>RTR</h1>
-  <br>
   <a href="https://wakatime.com/badge/user/096fb73c-2b1b-48e7-975e-89bfd40f424d/project/9782c29b-2264-46b7-9049-ed1a93fe93f9">
     <img src="https://wakatime.com/badge/user/096fb73c-2b1b-48e7-975e-89bfd40f424d/project/9782c29b-2264-46b7-9049-ed1a93fe93f9.svg" alt="wakatime">
   </a>
