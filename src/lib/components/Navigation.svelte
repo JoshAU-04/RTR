@@ -9,7 +9,7 @@
 
 <nav class="navbar">
   <div class="container-fluid">
-    <a class="brand navbar-brand me-auto mb-2" href="/">RTR</a>
+    <a class="brand navbar-brand me-auto mb-2" href="/RTR">RTR</a>
     <ul class="navbar-nav">
       {#each links as { name, href }}
         <li class="nav-item"><a class="nav-link" href={href}>{name}</a></li>
