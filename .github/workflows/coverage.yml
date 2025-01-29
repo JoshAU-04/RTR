@@ -1,7 +1,9 @@
 name: Upload coverage
 
 on:
-  push
+  push:
+    paths: 
+      - 'src/**'
 
 jobs:
   test:
